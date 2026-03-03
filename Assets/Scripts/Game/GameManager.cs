@@ -128,7 +128,7 @@ public class GameManager:MonoBehaviour
 		}
 
         if (changingRoom 
-        || !map.rooms[(int)currentRoomRC.y][(int)currentRoomRC.x].completed )
+        || !map.rooms[(int)currentRoomRC.y][(int)currentRoomRC.x].completed ) // If enemies have not been cleared (combat still in progress)
         {
             blockShop = true;
         }
