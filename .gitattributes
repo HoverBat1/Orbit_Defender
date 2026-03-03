@@ -1,4 +1,9 @@
-# Declare unity data files that will always have LF line endings on checkout
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.cs text
 *.unity text eol=lf
 *.asset text eol=lf
 *.anim text eol=lf
@@ -12,3 +17,9 @@
 *.mat text eol=lf
 *.mask text eol=lf
 *.spriteatlas text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.dll binary
+# ... add other binary file types as needed
