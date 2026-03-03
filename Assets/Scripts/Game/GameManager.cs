@@ -11,6 +11,7 @@ using System;
 
 
 // ----------------------------------------------------------------
+// ----------------------------------------------------------------
 public class GameManager:MonoBehaviour 
 {
 	public bool changingRoom = false;
